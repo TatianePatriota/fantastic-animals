@@ -80,4 +80,31 @@ li a {
 }
 
 .list-animals {
+  height: 370px;
+  overflow-y: scroll;
+  grid-column: 2;
+}
+
+.list-animals::-webkit-scrollbar {
+  width: 18px;
+}
+
+.list-animals::-webkit-scrollbar-thumb {
+  padding-left: 4px;
+  background-color: #fb5;
+  border-left: 4px solid #faf6ed;
+  border-right: 4px solid #faf6ed;
+  border-radius: 8px;
+}
+
+.list-animals::-webkit-scrollbar-track {
+  background-color: #faf6ed;
+}
+
+.description-animals {
+  grid-column: 3;
+}
+
+.description-animals section {
+  margin-bottom: 3rem;
 }
